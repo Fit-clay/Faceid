@@ -65,7 +65,7 @@ public abstract class MySubscriber<T> implements Observer<T> {
                 case BAD_GATEWAY:
                 case SERVICE_UNAVAILABLE:
                 default:
-                    _onError("网络错误");
+                    _onError(httpException.code()+"网络错误");
                     break;
             }
         } else if (e instanceof JsonParseException
