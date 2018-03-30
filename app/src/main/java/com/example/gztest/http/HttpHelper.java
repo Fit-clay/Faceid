@@ -61,7 +61,7 @@ public class HttpHelper {
                 .client(okHttpClient)
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://122.144.133.37:8085/")
+                .baseUrl("http://idauth.517eshop.com/")
                 .build();
         movieService = retrofit.create(ApiService.class);
     }

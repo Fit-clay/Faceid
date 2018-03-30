@@ -39,11 +39,11 @@ public interface ApiService {
 
 
     @Headers("Content-type: application/json")
-    @POST("idcard/v1/ocr")
+    @POST("api/v1/idcard/ocr")
     Observable<IdBean> upInfo(@Body UpSfz string);
 
     @Headers("Content-type: application/json")
-    @POST("idcard/v1/face/check")
+    @POST("api/v1/face/check")
     Observable<CheckBean> checkuserInfo(@Body UpCheckBean upCheckBean);
 
 
